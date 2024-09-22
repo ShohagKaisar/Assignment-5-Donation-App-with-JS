@@ -18,7 +18,7 @@
 </head>
 
 <body class="font-Lexend">
-  <header class="mx-auto sticky top-0">
+  <header class="mx-auto lg:sticky lg:top-0">
     <nav class="bg-slate-50 pb-6">
       <div class="navbar px-20 flex flex-col lg:flex-row items-center justify-center">
         <div class="navbar-start">
@@ -33,7 +33,7 @@
         <div class="navbar-end">
           <div class="flex gap-1 items-center">
             <img src="./assets/coin.png" alt="" />
-            <p class="text-2xl">10000</p>
+            <p id="main-balance" class="text-2xl">10000</p>
             <p class="text-2xl">BDT</p>
           </div>
         </div>
@@ -51,10 +51,10 @@
     <section class="border-2 container mx-auto rounded-md">
       <div class="p-5 flex flex-col lg:flex-row item justify-between gap-6">
         <img src="./assets/noakhali.png" alt="" />
-        <div class="space-y-6">
+        <div id="modal-div" class="space-y-6">
           <div class="flex gap-1 items-center bg-base-200 p-4 rounded-md w-fit">
             <img src="./assets/coin.png" alt="" />
-            <p class="text-2xl">0</p>
+            <p id="current-donation-amount" class="text-2xl">0</p>
             <p class="text-2xl">BDT</p>
           </div>
           <h2 class="text-xl font-semibold">
@@ -68,9 +68,9 @@
             supporting the relief efforts and making a positive impact on the
             lives of those in need.
           </p>
-          <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+          <input id="input-box" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
           <!-- Open the modal using ID.showModal() method -->
-          <button class="btn bg-lime-300 font-bold text-xl w-full" onclick="my_modal_5.showModal()">
+          <button id="donate-now-btn" class="btn bg-lime-300 font-bold text-xl w-full" onclick="my_modal_5.showModal()">
             Donate Now
           </button>
           <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
@@ -204,6 +204,10 @@
     </section>
 
   </main>
+  <!-- History Section -->
+  <div id="history-nfo-div" class="w-full bg-red-400 h-20 hidden">
+
+  </div>
   <footer class="w-full h-20 bg-slate-100"></footer>
 
 
