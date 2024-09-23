@@ -51,3 +51,10 @@ function getNumber(id) {
   return catchId;
 }
 
+const blogBtn = document.getElementById("blog-btn");
+blogBtn.addEventListener("click", () => {
+  window.location.href = "./blog.html";
+})
+
+
+
