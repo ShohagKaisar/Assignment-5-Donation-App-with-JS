@@ -40,10 +40,10 @@
       </div>
     </nav>
     <!-- Donation and History Button -->
-      <div class="flex justify-center items-center gap-4 pt-10 pb-6 bg-white">
-        <button id="donation-btn" class="p-4 bg-lime-300 font-bold text-xl border-2 rounded-md">Donation</button>
-        <button id="history-btn" class="p-4 font-bold text-xl border-2 rounded-md">History</button>
-      </div>
+    <div class="flex justify-center items-center gap-4 pt-10 pb-6 bg-white">
+      <button id="donation-btn" class="p-4 bg-lime-300 font-bold text-xl border-2 rounded-md">Donation</button>
+      <button id="history-btn" class="p-4 font-bold text-xl border-2 rounded-md">History</button>
+    </div>
   </header>
   <!-- All Card Section -->
   <main id="main-card-div" class="space-y-6 mb-20">
@@ -73,32 +73,32 @@
           <button id="donate-now-btn" class="btn bg-lime-300 font-bold text-xl w-full">
             Donate Now
           </button>
-            <dialog id="my_modal_5" class="modal modal-middle">
-              <div class="modal-box">
-                <div class="flex justify-center">
-                  <h3 class="text-3xl font-bold">Congrates!</h3>
-                </div>
-                <div class="flex justify-center items-center my-5">
-                  <img class="w-16 h-16" src="./assets/coin.png" alt="">
-                </div>
-                <div class="flex justify-center">
-                  <p class="py-4">
-                    You Have Donated For Humankind
-                  </p>
-                </div>
-                <div class="flex justify-center">
-                  <p class="text-xl font-semibold">Successfully</p>
-                </div>
-                <div class="modal-action">
-                  <form class="mx-auto" method="dialog">
-                    <!-- if there is a button in form, it will close the modal -->
-                    <button class="bg-base-200 p-4 rounded-md hover:bg-lime-300 font-bold text-xl">
-                      Close Confirmation
-                    </button>
-                  </form>
-                </div>
+          <dialog id="my_modal_5" class="modal modal-middle">
+            <div class="modal-box">
+              <div class="flex justify-center">
+                <h3 class="text-3xl font-bold">Congrates!</h3>
               </div>
-            </dialog>
+              <div class="flex justify-center items-center my-5">
+                <img class="w-16 h-16" src="./assets/coin.png" alt="">
+              </div>
+              <div class="flex justify-center">
+                <p class="py-4">
+                  You Have Donated For Humankind
+                </p>
+              </div>
+              <div class="flex justify-center">
+                <p class="text-xl font-semibold">Successfully</p>
+              </div>
+              <div class="modal-action">
+                <form class="mx-auto" method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="bg-base-200 p-4 rounded-md hover:bg-lime-300 font-bold text-xl">
+                    Close Confirmation
+                  </button>
+                </form>
+              </div>
+            </div>
+          </dialog>
         </div>
       </div>
     </section>
@@ -116,10 +116,14 @@
             Donate for Flood Relief in Feni,Bangladesh
           </h2>
           <p class="text-justify">
-The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous
-donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this
-calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every
-contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+            The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your
+            generous
+            donation will help provide immediate aid, including food, clean water, and medical supplies, to those
+            affected by this
+            calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster.
+            Every
+            contribution counts towards making a real difference. Please consider donating today to assist those in
+            urgent need.
           </p>
           <input id="input-box2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
           <!-- Open the modal using ID.showModal() method -->
@@ -156,18 +160,76 @@ contribution counts towards making a real difference. Please consider donating t
       </div>
     </section>
     <!-- Caed-3 -->
+    <section class="border-2 container mx-auto rounded-md">
+      <div class="p-5 flex flex-col lg:flex-row item justify-between gap-6">
+        <img src="./assets/feni.png" alt="" />
+        <div id="modal-div" class="space-y-6">
+          <div class="flex gap-1 items-center bg-base-200 p-4 rounded-md w-fit">
+            <img src="./assets/coin.png" alt="" />
+            <p id="current-donation-amount3" class="text-2xl">0</p>
+            <p class="text-2xl">BDT</p>
+          </div>
+          <h2 class="text-xl font-semibold">
+            Donate for Flood Relief in Feni,Bangladesh
+          </h2>
+          <p class="text-justify">
+            The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your
+            generous
+            donation will help provide immediate aid, including food, clean water, and medical supplies, to those
+            affected by this
+            calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster.
+            Every
+            contribution counts towards making a real difference. Please consider donating today to assist those in
+            urgent need.
+          </p>
+          <input id="input-box3" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+          <!-- Open the modal using ID.showModal() method -->
+          <button id="donate-now-btn2" class="btn bg-lime-300 font-bold text-xl w-full">
+            Donate Now
+          </button>
+          <dialog id="my_modal_3" class="modal modal-middle">
+            <div class="modal-box">
+              <div class="flex justify-center">
+                <h3 class="text-3xl font-bold">Congrates!</h3>
+              </div>
+              <div class="flex justify-center items-center my-5">
+                <img class="w-16 h-16" src="./assets/coin.png" alt="">
+              </div>
+              <div class="flex justify-center">
+                <p class="py-4">
+                  You Have Donated For Humankind
+                </p>
+              </div>
+              <div class="flex justify-center">
+                <p class="text-xl font-semibold">Successfully</p>
+              </div>
+              <div class="modal-action">
+                <form class="mx-auto" method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="bg-base-200 p-4 rounded-md hover:bg-lime-300 font-bold text-xl">
+                    Close Confirmation
+                  </button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </div>
+    </section>
 
 
   </main>
   <!-- History Section -->
-   <div id="history-nfo-div">
+  <div id="history-nfo-div">
 
-   </div>
+  </div>
   <footer class="w-full h-20 bg-slate-100"></footer>
 
 
 
-<script src="./js/script1.js"></script>
-<script src="./js/script2.js"></script>
+  <script src="./js/script1.js"></script>
+  <script src="./js/script2.js"></script>
+  <script src="./js/script3.js"></script>
 </body>
+
 </html>
