@@ -17,9 +17,9 @@ donationBtn.addEventListener("click", () => {
   historyInfoDiv.classList.add("hidden");
 });
 
+// 1st Section Donation
 const donateNowBtn = document.getElementById("donate-now-btn");
 const inputBox = document.getElementById("input-box");
-let addFunction = document.getElementById("donate-now-btn");
 
 let currentBalance = 0;
 let balance = 10000;
@@ -27,34 +27,45 @@ let balance = 10000;
 donateNowBtn.addEventListener("click", () => {
   let numberValue = getNumber("input-box");
   // console.log(typeof numberValue);
-  if (typeof numberValue == "number" && 0 < numberValue && inputBox.value < balance) {
+  if (
+    typeof numberValue == "number" &&
+    0 < numberValue &&
+    inputBox.value < balance
+  ) {
     currentBalance += numberValue;
     balance -= numberValue;
     document.getElementById("current-donation-amount").innerText =
       currentBalance;
     document.getElementById("main-balance").innerText = balance;
     inputBox.value = "";
-    addFunction.setAttribute("onclick", "my_modal_5.showModal()");
+    donateNowBtn.setAttribute("onclick", "my_modal_5.showModal()");
     my_modal_5.showModal();
+
+    // Add Histoy Part
+    let time = Date();
+    let history = `<div class="flex items-center px-16 gap-20  container mx-auto w-full h-20 border-2 rounded-xl">
+            <div>
+              <p class="font-bold">${numberValue} taka is Donated for Flood at Noakhali, Bangladesh</p>
+              <p class="text-slate-500">${time}</p>
+            </div>
+      </div>`;
+    historyInfoDiv.insertAdjacentHTML('beforeend', history)
   } else {
-    alert("Please Input Legal Amount Only \n and \n Write Amount Bellow Main Balance");
+    alert(
+      "Please Input Legal Amount Only \n and \n Write Amount Bellow Main Balance"
+    );
     inputBox.value = "";
-    addFunction.removeAttribute("onclick");
+    donateNowBtn.removeAttribute("onclick");
   }
 });
-
 
 // Reusable Function for Conver Input valur string to number.
 function getNumber(id) {
   let catchId = Number(document.getElementById(id).value);
-  console.log(catchId);
   return catchId;
 }
 
 const blogBtn = document.getElementById("blog-btn");
 blogBtn.addEventListener("click", () => {
   window.location.href = "./blog.html";
-})
-
-
-
+});

@@ -106,24 +106,27 @@
     <section class="border-2 container mx-auto rounded-md">
       <div class="p-5 flex flex-col lg:flex-row item justify-between gap-6">
         <img src="./assets/feni.png" alt="" />
-        <div class="space-y-6">
+        <div id="modal-div" class="space-y-6">
           <div class="flex gap-1 items-center bg-base-200 p-4 rounded-md w-fit">
             <img src="./assets/coin.png" alt="" />
-            <p class="text-2xl">0</p>
+            <p id="current-donation-amount2" class="text-2xl">0</p>
             <p class="text-2xl">BDT</p>
           </div>
           <h2 class="text-xl font-semibold">
             Donate for Flood Relief in Feni,Bangladesh
           </h2>
           <p class="text-justify">
-            The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous
+donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this
+calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every
+contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
           </p>
-          <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+          <input id="input-box2" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
           <!-- Open the modal using ID.showModal() method -->
-          <button class="btn bg-lime-300 font-bold text-xl w-full" onclick="my_modal_4.showModal()">
+          <button id="donate-now-btn2" class="btn bg-lime-300 font-bold text-xl w-full">
             Donate Now
           </button>
-          <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+          <dialog id="my_modal_4" class="modal modal-middle">
             <div class="modal-box">
               <div class="flex justify-center">
                 <h3 class="text-3xl font-bold">Congrates!</h3>
@@ -153,65 +156,18 @@
       </div>
     </section>
     <!-- Caed-3 -->
-    <section class="border-2 container mx-auto rounded-md">
-      <div class="p-5 flex flex-col lg:flex-row item justify-between gap-6">
-        <img src="./assets/quota-protest.png" alt="" />
-        <div class="space-y-6">
-          <div class="flex gap-1 items-center bg-base-200 p-4 rounded-md w-fit">
-            <img src="./assets/coin.png" alt="" />
-            <p class="text-2xl">0</p>
-            <p class="text-2xl">BDT</p>
-          </div>
-          <h2 class="text-xl font-semibold">
-            Aid for Injured in the Quota Movement
-          </h2>
-          <p class="text-justify">
-            The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
-          </p>
-          <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
-          <!-- Open the modal using ID.showModal() method -->
-          <button class="btn bg-lime-300 font-bold text-xl w-full" onclick="my_modal_3.showModal()">
-            Donate Now
-          </button>
-          <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
-            <div class="modal-box">
-              <div class="flex justify-center">
-                <h3 class="text-3xl font-bold">Congrates!</h3>
-              </div>
-              <div class="flex justify-center items-center my-5">
-                <img class="w-16 h-16" src="./assets/coin.png" alt="">
-              </div>
-              <div class="flex justify-center">
-                <p class="py-4">
-                  You Have Donated For Humankind
-                </p>
-              </div>
-              <div class="flex justify-center">
-                <p class="text-xl font-semibold">Successfully</p>
-              </div>
-              <div class="modal-action">
-                <form class="mx-auto" method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="bg-base-200 p-4 rounded-md hover:bg-lime-300 font-bold text-xl">
-                    Close Confirmation
-                  </button>
-                </form>
-              </div>
-            </div>
-          </dialog>
-        </div>
-      </div>
-    </section>
+
 
   </main>
   <!-- History Section -->
-  <div id="history-nfo-div" class="w-full bg-red-400 h-20 hidden">
+   <div id="history-nfo-div">
 
-  </div>
+   </div>
   <footer class="w-full h-20 bg-slate-100"></footer>
 
 
 
 <script src="./js/script1.js"></script>
+<script src="./js/script2.js"></script>
 </body>
 </html>
