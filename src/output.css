@@ -1790,6 +1790,10 @@ html {
   border-start-end-radius: inherit;
 }
 
+.modal-middle {
+  place-items: center;
+}
+
 .modal-bottom {
   place-items: end;
 }
@@ -1859,10 +1863,6 @@ html {
 
 .sticky {
   position: sticky;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .mx-auto {
