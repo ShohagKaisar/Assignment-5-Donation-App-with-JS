@@ -12,12 +12,12 @@
 
 ## Design
 
-- **Navbar**: Create a visually appealing navbar with the following structure:
+- **Navbar**: Create a visually appealing navbar with the following structure:✔️
   - Logo positioned in the middle. ✔️
   - "Blog" button on the left.✔️
   - Account balance with a coin icon on the right.✔️
   - "Donation" and "History" buttons in the center (as per Figma).✔️
-- **Donation Cards**: Create 3 donation cards with the following details:
+- **Donation Cards**: Create 3 donation cards with the following details:✔️
   - Image on the left.✔️
   - Donation title.✔️
   - Donation info.✔️
@@ -28,7 +28,7 @@
 
 ## Functionalities
 
-- **Donation and History Button Functionality**:
+- **Donation and History Button Functionality**:✔️
   - Clicking the "History" button will hide the donation data and display the history.✔️
   - Clicking the "Donation" button will hide the history and display the donation data.✔️
 - **Donation Functionality for Each Card**:✔️
@@ -42,11 +42,11 @@
     - If the donation amount is greater than the account balance.✔️
     - If the input field contains an invalid number.✔️
     - If the input field is empty.✔️
-- **History Section**:
-  - The history section will display transaction notifications, including:
-    - Date and time of the transaction.
-    - Donation amount.
-    - Donation name.
+- **History Section**:✔️
+  - The history section will display transaction notifications, including:✔️
+    - Date and time of the transaction.✔️
+    - Donation amount.✔️
+    - Donation name.✔️
 
 ## Challenges
 
@@ -57,7 +57,7 @@
     2. How do you select an element from the DOM?✔️
     3. What is event delegation in the context of the DOM, and why is it useful?✔️
     4. How do you manipulate an element's attributes and styles using the DOM?✔️
-- **Toggle Active Status**: Toggle the active status of the "Donation" and "History" buttons:
+- **Toggle Active Status**: Toggle the active status of the "Donation" and "History" buttons:✔️
   - Change the button color to indicate when it's active.✔️
 - **Static Modal**: Display a static modal instead of an alert on a successful donation.✔️
 - **Reusable Functions**: Use at least 2 common functions.✔️

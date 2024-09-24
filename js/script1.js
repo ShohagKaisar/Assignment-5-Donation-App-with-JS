@@ -45,11 +45,11 @@ donateNowBtn.addEventListener("click", () => {
     let time = Date();
     let history = `<div class="flex items-center px-16 gap-20 container mx-auto w-full border-2 rounded-xl h-fit">
             <div class="px-4">
-              <p class="font-bold">${numberValue} taka is Donated for Flood Relief in Feni,Bangladesh</p>
+              <p class="font-bold">${numberValue} taka is Donated for Flood at Noakhali, Bangladesh</p>
               <p class="text-slate-500">${time}</p>
             </div>
       </div>`;
-    historyInfoDiv.insertAdjacentHTML('beforeend', history)
+    historyInfoDiv.insertAdjacentHTML("beforeend", history);
   } else {
     alert(
       "Please Input Legal Amount Only \n and \n Write Amount Bellow Main Balance"

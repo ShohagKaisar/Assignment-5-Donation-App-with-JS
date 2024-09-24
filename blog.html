@@ -1,71 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tailwind CSS File Iink -->
-    <link rel="stylesheet" href="./src/output.css" />
+  <!-- Tailwind CSS File Iink -->
+  <link rel="stylesheet" href="./src/output.css" />
 
   <title>Blog</title>
 </head>
+
 <body class="container mx-auto">
   <!-- nav bar -->
-      <nav class="bg-slate-50 pb-6">
-        <div class="navbar px-20 flex flex-col lg:flex-row items-center justify-center">
-          <div class="navbar-start">
-            <button id="home-btn" class="btn bg-lime-300 font-bold text-xl w-full lg:w-fit">
-              Home
-            </button>
-          </div>
-          <div class="navbar-center flex flex-col lg:flex-row my-5 lg:my-0">
-            <img src="./assets/logo.png" alt="" />
-            <p class="ml-4 text-2xl font-bold">Donate Bangladesh</p>
-          </div>
-          <div class="navbar-end">
-            <div class="flex gap-1 items-center">
-              <img src="./assets/coin.png" alt="" />
-              <p id="main-balance" class="text-2xl">10000</p>
-              <p class="text-2xl">BDT</p>
-            </div>
-          </div>
-        </div>
-      </nav>
-   <!-- FAQ Section -->
-    <div class="space-y-5 p-4">
-      <div>
-        <p class="text-4xl font-bold">Important FAQ ?</p>
+  <nav class="bg-slate-50 pb-6">
+    <div class="navbar px-20 flex flex-col lg:flex-row items-center justify-center">
+      <div class="navbar-start">
+        <button id="home-btn" class="btn bg-lime-300 font-bold text-xl w-full lg:w-fit">
+          Home
+        </button>
       </div>
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium">Q: What is DOM ?</div>
-        <div class="collapse-content">
-          <p>DOM Means "Document Object Model"</p>
-        </div>
+      <div class="navbar-center flex flex-col lg:flex-row my-5 lg:my-0">
+        <img src="./assets/logo.png" alt="" />
+        <p class="ml-4 text-2xl font-bold">Donate Bangladesh</p>
       </div>
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Q: What is Eventlistener in JS ?</div>
-        <div class="collapse-content">
-          <p>When the specified event occurs, the event listener triggers a callback function to execute specific actions.</p>
-        </div>
-      </div>
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Q: What is Variable in JS ?</div>
-        <div class="collapse-content">
-          <p>store data and manipulate it dynamically throughout the code.</p>
-        </div>
-      </div>
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">What is Function in JS ?</div>
-        <div class="collapse-content">
-          <p>In JavaScript, a function is a block of reusable code designed to perform a specific task.</p>
+      <div class="navbar-end">
+        <div class="flex gap-1 items-center">
+          <img src="./assets/coin.png" alt="" />
+          <p id="main-balance" class="text-2xl">10000</p>
+          <p class="text-2xl">BDT</p>
         </div>
       </div>
     </div>
+  </nav>
+  <!-- FAQ Section -->
+  <div class="space-y-5 p-4">
+    <div>
+      <p class="text-4xl font-bold">Important FAQ ?</p>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">Q: What is DOM ?</div>
+      <div class="collapse-content">
+        <p>DOM Means "Document Object Model"</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">Q: What is Eventlistener in JS ?</div>
+      <div class="collapse-content">
+        <p>When the specified event occurs, the event listener triggers a callback function to execute specific actions.
+        </p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">Q: What is Variable in JS ?</div>
+      <div class="collapse-content">
+        <p>store data and manipulate it dynamically throughout the code.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">What is Function in JS ?</div>
+      <div class="collapse-content">
+        <p>In JavaScript, a function is a block of reusable code designed to perform a specific task.</p>
+      </div>
+    </div>
+  </div>
 
 
-    <script src="./js/blogscript.js"></script>
+  <script src="./js/blogscript.js"></script>
 </body>
+
 </html>
