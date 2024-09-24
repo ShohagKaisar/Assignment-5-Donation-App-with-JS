@@ -23,8 +23,8 @@ donateNowBtn2.addEventListener("click", () => {
     my_modal_4.showModal();
 
         let time = Date();
-        let history2 = `<div class="flex items-center px-16 gap-20  container mx-auto w-full h-20 border-2 rounded-xl">
-            <div>
+        let history2 = `<div class="flex items-center px-16 gap-20 container mx-auto w-full border-2 rounded-xl h-fit">
+            <div class="px-4">
               <p class="font-bold">${numberValue} taka is Donated for Flood Relief in Feni,Bangladesh</p>
               <p class="text-slate-500">${time}</p>
             </div>
